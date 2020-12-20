@@ -4,7 +4,11 @@
   "description": "get random startwars names",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commit": "git-cz",
+    "test": "mocha src/index.test.js -w",
+    "test:single": "istanbul cover -x *.test.js _mocha -- -R spec src/index.test.js",
+    "build": "babel --out-dir dist --ignore -*.test.js src",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -22,6 +26,18 @@
   },
   "homepage": "https://github.com/shankarsivaReddy/starwars-names#readme",
   "dependencies": {
+    "semantic-release-cli": "5.4.0",
     "unique-random-array": "2.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "chai": "4.2.0",
+    "commitizen": "4.2.2",
+    "cz-conventional-changelog": "3.3.0",
+    "mocha": "8.2.1",
+    "semantic-release": "^17.3.0"
+  },
+  "cZConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   }
 }
