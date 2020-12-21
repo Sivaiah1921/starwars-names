@@ -1,6 +1,6 @@
 {
-  "name": "starwars-names",
-  "version": "1.3.0-beta-0",
+  "name": "starwars-names-xyz",
+  "version": "1.4.0",
   "description": "get random startwars names",
   "main": "src/index.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "wars"
   ],
   "author": "siva <shankarreddy2025@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/shankarsivaReddy/starwars-names/issues"
   },
